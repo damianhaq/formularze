@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularze</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Książki</h1>
+    <form id="form">
+      <h2>Dodaj książkę</h2>
+      <div class="wrapper">
+        <label for="title">Tytuł</label>
+        <input type="text" name="title" id="title" />
+        <p id="errorTitle" class="error"></p>
+      </div>
+      <div class="wrapper">
+        <label for="author">Autor</label>
+        <input type="text" name="author" id="author" />
+        <p id="errorAuthor" class="error"></p>
+      </div>
+      <div id="priority" class="priority">
+        <p>Priorytet</p>
+        <input type="radio" name="priority" id="1" value="1" checked />
+        <label for="1">1</label>
+        <input type="radio" name="priority" id="2" value="2" />
+        <label for="2">2</label>
+        <input type="radio" name="priority" id="3" value="3" />
+        <label for="3">3</label>
+        <input type="radio" name="priority" id="4" value="4" />
+        <label for="4">4</label>
+        <input type="radio" name="priority" id="5" value="5" />
+        <label for="5">5</label>
+      </div>
+
+      <div class="category">
+        <label for="category">Kategoria:</label>
+        <select name="category" id="category">
+          <option value="Epika">Epika</option>
+          <option value="Liryka">Liryka</option>
+          <option value="Dramat">Dramat</option>
+        </select>
+      </div>
+      <button type="submit">Zapisz</button>
+    </form>
+
+    <section id="list" class="list"></section>
+  </body>
+  <script src="app.js"></script>
+</html>
